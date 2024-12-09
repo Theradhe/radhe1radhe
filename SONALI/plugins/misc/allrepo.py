@@ -24,14 +24,14 @@ async def all_repo_command(client, message):
             for chunk in chunked_repo_info:
                 await message.reply_text(chunk)
         else:
-            await message.reply_text("Please enter a GitHub username after the /allrepo command.")
+            await message.reply_text("Please enter a GitHub username after the /allre command.")
     except Exception as e:
         await message.reply_text(f"An error occurred: {str(e)}")
 #######
 
 def get_all_repository_info(github_username):
     # Set up the GitHub API URL for user repositories
-    github_api_url = f"https://api.github.com/users/{github_username}/repos
+    github_api_url = f"https://api.github.com/users/{github_username}/repos"
     
     # Perform the request to the GitHub API
     response = requests.get(github_api_url)
