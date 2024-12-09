@@ -31,8 +31,8 @@ async def all_repo_command(client, message):
 
 def get_all_repository_info(github_username):
     # Set up the GitHub API URL for user repositories
-    github_api_url = f"https://api.github.com/users/{github_username}/repos"
-
+    github_api_url =
+    
     # Perform the request to the GitHub API
     response = requests.get(github_api_url)
     data = response.json()
